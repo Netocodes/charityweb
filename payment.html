@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity Event</title>
+  <link rel="icon" href="img/websiteLogo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+   <!-- GOOGLE FONT -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:wght@300;400;700&family=Noto+Sans:wght@800&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+<body>
+
+
+  <body>
+    <div class="preloader">
+      <div class="spinner"></div>
+  </div>
+
+  <div id="content" style="opacity: 0;">
+  <!-- firstNav -->
+ <div class="firstnav">
+  <div class="contact-info mb-3">
+    <p class="number1"> <i class="fa-solid fa-map-pin"></i> Akershusstranda 20, 0150 Oslo, Norway</p>
+    <p> <i class="fa-regular fa-envelope"></i> info@company.com</p>
+
+    <div class="icon  d-none d-md-block" >
+      
+<a href="//web.whatsapp.com">  <i class="fa-brands fa-whatsapp p-1"></i></a>
+
+  <a href="https://twitter.com/"> <i class="fa-brands fa-twitter p-1"></i></a>
+
+  <a href="https://web.facebook.com/?_rdc=1&_rdr"> <i class="fa-brands fa-facebook p-1"></i></a>
+     
+  <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube p-1"></i></a>
+      
+  <a href="https://www.instagram.com/?hl=en"> <i class="fa-brands fa-instagram p-1"></i></a>
+      
+      </div>
+  </div>
+ </div>
+ <!-- firstNav -->
+ 
+ <!-- mainNavbar -->
+ <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #ffff; z-index: 1000;">
+  <div class="container">
+    
+    <a class="navbar-brand" href="#">
+      <div class="d-flex align-items-center">
+        <img src="img/logo.png" alt="Kind Heart Charity Logo" width="90" height="80" class="d-inline-block align-bottom me-2">
+        <div class="ppp">
+          <p class="mb-0 txt-1">Supporting Hands</p>
+         <small class="mb-0 smallie">A Charity for the Needy</small>
+        </div>
+      </div>
+    </a>
+    <br>
+    
+    <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <i id="toggleIcon" class="fa-solid fa-bars-staggered"></i>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link  nav-1" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  nav-2" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-3 " href="#causes">Causes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  nav-4" href="#volunteer">Volunteer</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-5 dropdown-toggle" href="#news" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            News
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">News Listing</a></li>
+            <li><a class="dropdown-item" href="#">News Detail</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  nav-6" href="#contact">Contact</a>
+        </li>
+        <button type="button" class="btn btn-outline-success rounded-pill nav-7"><a href="payment.html"> Donate</a></button>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!-- mainNavbar -->
+ <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+ <div class="pay">
+  <div class="bg-img"></div>
+  <div class="container">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-6 col-sm-12">
+  <div class="card p-4" style="width: 700px;" >
+    <div class="card-body">
+      <h2 class="card-title" style="color: #000000 !important; font-weight: 600;">Make a donation</h2>
+      <h4 class="card-title mt-4" >Donation Frequency</h4>
+     <div class="btt mt-4">
+      <button class="btn-t p-3 active" id="button-1" >One Time</button>
+      <button class="btn-t p-3"  id="button-2">Monthly</button>
+     </div><br>
+<div class="bt">
+  <h4 class="card-title mt-4" >Set an Amount</h4>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-6 col-sm-3">
+        <button class="btn btn-primary btn-block custom-btn" onclick="updateInputField(30)">$30</button>
+      </div>
+      <div class="col-6 col-sm-3">
+        <button class="btn btn-primary btn-block custom-btn" onclick="updateInputField(50)">$50</button>
+      </div>
+      <div class="col-6 col-sm-3">
+        <button class="btn btn-primary btn-block custom-btn" onclick="updateInputField(100)">$100</button>
+      </div>
+      <div class="col-6 col-sm-3">
+        <button class="btn btn-primary btn-block custom-btn" onclick="updateInputField(150)">$150</button>
+      </div>
+      <div class="col-6 col-sm-3">
+        <button class="btn btn-primary btn-block custom-btn" onclick="updateInputField(250)">$250+</button>
+      </div>
+      <div class="col-6 col-sm-3">
+        <button class="btn btn-primary btn-block custom-btn" onclick="updateInputField(500)">$500+</button> 
+      </div>
+      <div class="col-6">
+        <div class="input-group mb-3">
+          <span class="input-group-text ty" id="basic-addon1">$</span>
+          <input id="customAmountInput" type="text" class="form-control custom-btn" placeholder="Custom Amount" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h4 class="card-title mt-4" >Personal Info</h4>
+
+  <div class="container ">
+    <div class="row">
+  <div class="col-md-6 p-3">
+    <label for="validationCustom01" class="form-label">Name</label>
+    <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your Name" required>
+  </div>
+
+  <div class="col-md-6 p-3">
+    <label for="validationCustom02" class="form-label">Email</label>
+    <input type="text" class="form-control" id="validationCustom02" placeholder=" Enter your Email" required>
+  </div>
+
+  </div>
+  </div>
+
+
+  <div>
+    <h4 class="card-title mt-4 mb-4" > Choose Payment</h4>
+
+    
+    <label class="custom-checkbox">
+      <input type="checkbox" name="checkbox1" value="checkbox1" >
+      <span class="checkmark"></span>  <i class="fa-regular fa-credit-card "></i> Debit or Credit card
+    </label><br>
+    
+    <label class="custom-checkbox mt-2">
+      <input type="checkbox" name="checkbox2" value="checkbox2">
+      <span class="checkmark"></span> <i class="fa-brands fa-paypal"></i> PayPal
+    </label>    
+  </div>
+  
+  <button id="paymentButton"  class="btn btn-lg mt-4 bh" >Submit Donation</button>
+
+
+  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.247), 0 6px 20px 0 rgba(0, 0, 0, 0.24);">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Processing Payment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="spinner" class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <p id="paymentSuccessMessage" style="display:none;">Your payment was successful! <i class="fa-solid fa-thumbs-up fa-beat" style="color: #2f9783 ; font-size: 22px; margin-left: 10px ;"></i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  
+</div>
+     
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+ </div>
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <footer class="text-light">
+    <div class="py-6  ft-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="fw-bold text-uppercase text-heading h mb-3 text-light">Supporting Hands</div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, animi!
+            </p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a class="text-para" href="https://Youtube.com/" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-para" href="https://twitter.com/" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-para" href="https://facebook.com/" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-para" href="https://instagram.com/" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="text-para" href="https://discord.com/" title="Discord"><i class="fa-brands fa-discord"></i></a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+            <h6 class="text-uppercase text-heading mb-3">Quick Links</h6>
+            <ul class="list-unstyled ">
+              <li><a href="#" class="text-para text-light">Our story</a></li>
+              <li><a href="#" class="text-para text-light">Newsroom</a></li>
+              <li><a href="#" class="text-para text-light">Causes</a></li>
+              <li><a href="#" class="text-para text-light">Become a Volunteer</a></li>
+              <li><a href="#" class="text-para text-light">Paertner with us.</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+            <h6 class="text-uppercase text-heading mb-3">Pages</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-para text-light">Water donation to Africa</a></li>
+              <li><a href="#" class="text-para text-light">Schorlarship</a></li>
+              <li><a href="#" class="text-para text-light">Volunteers</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6 class="text-uppercase text-heading mb-3">Contact information</h6>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a href="tel:+15057922430" class="text-para text-light"> <i class="fa-solid fa-phone"> </i> (505) 792-2430</a></li>
+              <li class="mb-3"><a href="mailto:Supportinghands@gmail.com" class="text-para text-light"> <i class="fa-solid fa-inbox"> </i> Supportinghands@gmail.com</a></li>
+              <li class="mb-3"><a href="mailto:Supportinghands@gmail.com" class="text-para text-light"> <i class="fa-solid fa-map-pin"> </i> 8014 Edith Blvd NE, Albuquerque, New York. </a></li>
+              <button type="button" class="btn btn-primary btn-lg t-button">Get Direction</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- my copyright section -->
+    <div class="py-4 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="text-sm mb-md-0">&copy; 2024, Neto Code's  All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- my copyright section -->
+  </footer>
+  <!-- last section -->
+</div>
+  
+  
+<!-- //////////////////////////////////////////////////// -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <script src="script.js"></script>
+ <script src="https://kit.fontawesome.com/004ccf552c.js" crossorigin="anonymous"></script>
+ 
+ <script>
+  // Show content after the page is fully loaded
+  window.addEventListener('load', function() {
+      setTimeout(function() {
+          document.getElementById('content').style.opacity = '1';
+          document.querySelector('.preloader').classList.add('fade-out');
+          // Remove preloader styles after fade-out animation completes
+          setTimeout(function() {
+              document.querySelector('.preloader').style.display = 'none';
+          }, 500); // Adjust this value to match the fade-out transition duration
+      }, 3000); // Adjust the timeout value (in milliseconds) as needed
+  });
+
+</script>
+</body>
+</html>
